@@ -1,0 +1,11 @@
+<div class="flex flex-col border-2 px-8 py-3 w-full bg-slate-600 rounded border-none overflow-x-auto">
+    <div class="mt-3">
+        <a href="{{repo.html_url}}" target="_blank" class="w-fit"><h1 class="font-bold md:text-[25px] text-[18px] text-white hover:underline w-full">{{repo.name}}</h1></a>
+    </div>
+    <div>
+        <p class="text-[12px]">{{repo.description}}</p>
+    </div>
+    <div class="flex items-center gap-2 mt-3">
+        <p class="bg-green-500 text-white font-bold text-[12px] rounded p-2" *ngFor = "let lang of languages | keyvalue">{{lang.key}}</p>
+    </div>
+</div>
